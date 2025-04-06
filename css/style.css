@@ -456,9 +456,21 @@ h1, h2, h3, h4 {
 
 .cta {
     padding: 80px 0;
-    background-color: var(--preto);
-    color: var(--branco);
+    background-color: var(--amarelo);
+    color: var(--preto);
     text-align: center;
+}
+.botao-primario1{
+    background-color: var(--preto);
+    color: var(--amarelo);  
+}
+.botao-primario1:hover {
+    background-color: var(--branco);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgb(12, 12, 12);
+    color: var(--preto); 
+    font-weight: bold;
+    
 }
 
 .conteudo-cta h2 {
@@ -545,6 +557,43 @@ h1, h2, h3, h4 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     color: var(--cinza-claro);
+}
+.apresentacao__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.apresentacao__formulario__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.apresentacao__formulario__grupo label {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__formulario__grupo input,
+.apresentacao__formulario__grupo textarea {
+    padding: 0.5rem;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__formulario__grupo textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: auto;
+    align-self: flex-start;
 }
 
 @keyframes fadeIn {
