@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | BurstFocus </title>
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus">
+            </div>
+            
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html" class="ativo">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-produtos">
+        <div class="container">
+            <h1>Produtos para Turbinar sua Produtividade</h1>
+            <p>Descubra ferramentas premium que vão transformar sua forma de trabalhar e estudar</p>
+            <div class="contador-oferta">
+                <p>Oferta termina em: <span id="contador">24:59:59</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="filtro-produtos">
+        <div class="container">
+            <div class="filtro-opcoes">
+                <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
+                <button class="botao-filtro" data-categoria="cursos">Cursos</button>
+                <button class="botao-filtro" data-categoria="templates">Templates</button>
+                <button class="botao-filtro" data-categoria="ebooks">E-books</button>
+                <button class="botao-filtro" data-categoria="software">Software</button>
+            </div>
+            <div class="campo-busca">
+                <input type="text" id="busca-produto" placeholder="Buscar produtos...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+    <section class="lista-produtos">
+        <div class="container">
+            <div class="grade-produtos">
+            
+            </div>
+        </div>
+    </section>
+    <section class="banner-promocional">
+        <div class="container">
+            <div class="conteudo-banner">
+                <h2>COMBO PRODUTIVIDADE</h2>
+                <p>Adquira nosso pacote completo com 40% de desconto!</p>
+                <button class="botao-destaque" id="botao-combo">Quero o Combo!</button>
+            </div>
+            <div class="contador-combo">
+                <p>Promoção válida por: <span id="contador-combo">02:59:59</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <div class="container">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="carrossel-depoimentos">
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div class="coluna-rodape">
+                    <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus" width="150">
+                    <p>Foco Explosivo para Mentes Criativas</p>
+                    
+                    <div class="redes-sociais">
+                        <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Garantia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> burstfocus@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> (82)98188-6616</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="rodape-inferior">
+                <p>&copy; 2025 BurstFocus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>
