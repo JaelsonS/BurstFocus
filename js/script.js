@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuMobile = document.querySelector('.menu-mobile');
     const menu = document.querySelector('.menu');
+    
     menuMobile.addEventListener('click', function() {
         menu.classList.toggle('mobile-ativo');
         menuMobile.classList.toggle('ativo');
-        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        document.body.style.overflow = menu.classList.contains('mobile-ativo') ? 'hidden' : '';
     });
+    
     const menuLinks = document.querySelectorAll('.menu a');
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('mobile-ativo');
             menuMobile.classList.remove('ativo');
+            document.body.style.overflow = '';
         });
     });
     
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const containerVideo = document.getElementById('containerVideo');
     const pularVideo = document.getElementById('pularVideo');
     const respostas = {
+        
         feliz: {
             mensagem: "Que ótimo que você está feliz! Aproveite essa energia positiva para ser produtivo hoje. Lembre-se: 'A felicidade não é algo pronto. Ela vem das suas próprias ações.' - Dalai Lama",
             video: "https://www.youtube.com/embed/HAnw168huqA"
