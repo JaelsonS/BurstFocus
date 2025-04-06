@@ -158,6 +158,7 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
     color: var(--cinza-medio);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .botoes-hero {
