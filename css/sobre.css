@@ -1,0 +1,171 @@
+
+.hero-sobre {
+    padding: 180px 0 80px;
+    background: linear-gradient(135deg, var(--preto) 0%, var(--cinza-escuro) 100%);
+    color: var(--branco);
+    text-align: center;
+}
+
+.hero-sobre h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-sobre h1 span {
+    color: var(--amarelo);
+}
+
+.hero-sobre .subtitulo {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.conteudo-sobre {
+    padding: 60px 0;
+}
+
+.conteudo-sobre .container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+}
+
+.conteudo-principal {
+    background-color: var(--branco);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.sobre-nos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--cinza-escuro);
+}
+
+.sobre-nos p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.destaque-sobre {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    align-items: center;
+}
+
+.destaque-sobre img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+}
+
+.texto-destaque {
+    flex: 1;
+}
+
+.texto-destaque h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--cinza-escuro);
+}
+
+.lista-beneficios {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.lista-beneficios li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.lista-beneficios i {
+    color: var(--amarelo);
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.cta-sobre {
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta-sobre h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.botoes-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.estatisticas-sobre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.estatistica-item {
+    background-color: var(--cinza-claro);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.estatistica-item .numero {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--amarelo);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.estatistica-item .rotulo {
+    font-size: 0.9rem;
+    color: var(--cinza-medio);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .conteudo-sobre .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .destaque-sobre {
+        flex-direction: column;
+    }
+    
+    .destaque-sobre img {
+        width: 100%;
+    }
+    
+    .botoes-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .estatisticas-sobre {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-sobre h1 {
+        font-size: 2.5rem;
+    }
+    
+    .conteudo-principal {
+        padding: 30px 20px;
+    }
+}
