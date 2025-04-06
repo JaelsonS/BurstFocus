@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | BurstFocus</title>
+    <meta name="author" content="BurstFocus">
+    <meta name="keywords" content="produtividade, foco, TDAH, procrastinação, neurociência, BurstFocus">
+    <meta name="description" content="Domine sua atenção, elimine a procrastinação e alcance produtividade máxima com técnicas cientificamente comprovadas">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://img.freepik.com/vetores-gratis/lampada-realista-com-eletricidade_23-2149129409.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" type="image/png">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus">
+            </div>
+            
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                </ul>
+                
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <h2 class="hero-title">Entre em Contato e Inspire-se</h2>
+                <p class="hero-subtitle">Conecte-se conosco e descubra histórias incríveis de superação</p>
+            </div>
+        </section>
+
+        <!-- Espaço para anúncio -->
+        <div class="container ad-space">
+            <h3>Patrocinador</h3>
+            <p id="dynamic-ad">Carregando anúncio...</p>
+            <small>Anúncio</small>
+        </div>
+
+        <section class="contact-section">
+            <div class="container grid">
+                <div class="contact-info">
+                    <h3 class="section-title">Nossos Canais</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/burstfocus" class="social-link" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://instagram.com/burstfocus" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://twitter.com/burstfocus" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://linkedin.com/company/burstfocus" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 class="section-title">Envie uma Mensagem</h3>
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu Nome" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu Email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Sua Mensagem" class="form-input" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Espaço para anúncio -->
+        <div class="container ad-space">
+            <h3>Oportunidade Única</h3>
+            <p id="dynamic-ad-2">Carregando oferta especial...</p>
+            <small>Publicidade</small>
+        </div>
+
+        <section class="stories-section">
+            <div class="container">
+                <h2 class="section-title">Histórias de Superação</h2>
+                <p class="section-subtitle">Inspire-se com essas incríveis jornadas</p>
+
+                <div class="grid">
+                    <!-- História 1 -->
+                    <div class="story-card card" onclick="showStory('story1')">
+                        <img src="https://via.placeholder.com/300x200?text=Oprah" alt="Oprah Winfrey" class="card-img">
+                        <div class="card-body">
+                            <h3>Oprah Winfrey</h3>
+                            <p>De uma infância difícil a uma das mulheres mais influentes do mundo...</p>
+                            <div id="story1" class="hidden-content">
+                                <p>Oprah nasceu na pobreza e enfrentou abusos na infância. Aos 19 anos, começou na TV local e, através de trabalho duro e autenticidade, construiu um império midiático. Sua história mostra que origem não define destino.</p>
+                                <button class="btn btn-sm btn-outline" onclick="shareStory('Oprah')">Compartilhar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- História 2 -->
+                    <div class="story-card card" onclick="showStory('story2')">
+                        <img src="https://via.placeholder.com/300x200?text=JK+Rowling" alt="J.K. Rowling" class="card-img">
+                        <div class="card-body">
+                            <h3>J.K. Rowling</h3>
+                            <p>De mãe solteira desempregada a autora de uma das séries mais vendidas...</p>
+                            <div id="story2" class="hidden-content">
+                                <p>Rowling escreveu Harry Potter enquanto era uma mãe solteira vivendo de assistência social. Seu manuscrito foi rejeitado por 12 editoras antes de ser aceito. Hoje, ela é uma das escritoras mais bem-sucedidas da história.</p>
+                                <button class="btn btn-sm btn-outline" onclick="shareStory('Rowling')">Compartilhar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- História 3 -->
+                    <div class="story-card card" onclick="showStory('story3')">
+                        <img src="https://via.placeholder.com/300x200?text=Nick+Vujicic" alt="Nick Vujicic" class="card-img">
+                        <div class="card-body">
+                            <h3>Nick Vujicic</h3>
+                            <p>Nascido sem membros, tornou-se um palestrante motivacional internacional...</p>
+                            <div id="story3" class="hidden-content">
+                                <p>Nick nasceu sem braços e pernas. Aos 10 anos, tentou se suicidar, mas encontrou propósito ao inspirar outros. Hoje viaja o mundo compartilhando sua mensagem de esperança, provando que nossas limitações não nos definem.</p>
+                                <button class="btn btn-sm btn-outline" onclick="shareStory('Nick')">Compartilhar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mais um espaço para anúncio -->
+        <div class="container ad-space">
+            <h3>Produtos Recomendados</h3>
+            <div id="product-carousel" class="product-carousel">
+                <!-- Produtos serão carregados via JS -->
+            </div>
+            <small>Anúncios</small>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div class="coluna-rodape">
+                    <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus" width="150">
+                    <p>Foco Explosivo para Mentes Criativas</p>
+                    
+                    <div class="redes-sociais">
+                        <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="rede-social"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Garantia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="coluna-rodape">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> burstfocus@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> (82)98188-6616</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="rodape-inferior">
+                <p>&copy; 2025 BurstFocus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>
