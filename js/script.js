@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         depoimentos[depoimentoAtual].classList.add('ativo');
     }
     function iniciarCarrossel() {
-        intervaloCarrossel = setInterval(proximoDepoimento, 1000);
+        intervaloCarrossel = setInterval(proximoDepoimento, 80000);
     }
     btnAnterior.addEventListener('click', () => {
         mostrarDepoimento(depoimentoAtual - 1);
