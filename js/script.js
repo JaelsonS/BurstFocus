@@ -45,11 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
                 `;
-                
-            
                 sugestaoVideo.scrollIntoView({ behavior: 'smooth' });
-                
-                
+
                 setTimeout(mostrarAnuncio, 180000); 
             }, 3000);
         });
