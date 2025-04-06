@@ -551,6 +551,118 @@ h1, h2, h3, h4 {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+@media (max-width: 768px) {
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    
+    
+    .botao-menu-mobile {
+        display: block;
+        order: 1;
+    }
+    
+    .logo {
+        order: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .navegacao-principal {
+        order: 3;
+        width: 100%;
+        display: none;
+    }
+    
+    .navegacao-principal.mobile-ativo {
+        display: block;
+    }
+    
+    .navegacao-principal ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .navegacao-principal li {
+        margin: 10px 0;
+    }
+    
+    .acoes-cabecalho {
+        order: 2;
+        margin-left: auto;
+    }
+    
+    
+    .marcos-historia {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .marco {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .membros-equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .membro {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .valores-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .valor {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .botoes-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botao-primario,
+    .botao-secundario {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-sobre {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-sobre h1 {
+        font-size: 1.8rem;
+    }
+    
+    .grid-rodape {
+        grid-template-columns: 1fr;
+    }
+    
+    .base-rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .links-base {
+        justify-content: center;
+    }
+}
 
 @media (max-width: 992px) {
     .hero .container,
