@@ -2,7 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuMobile = document.querySelector('.menu-mobile');
     const menu = document.querySelector('.menu');
     menuMobile.addEventListener('click', function() {
+        menu.classList.toggle('mobile-ativo');
+        menuMobile.classList.toggle('ativo');
         menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+    const menuLinks = document.querySelectorAll('.menu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('mobile-ativo');
+            menuMobile.classList.remove('ativo');
+        });
     });
     
     const botoesHumor = document.querySelectorAll('.botao-humor');
@@ -35,6 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     botoesHumor.forEach(botao => {
         botao.addEventListener('click', function() {
+            botoesHumor.forEach(btn => {
+                btn.classList.remove('ativo');
+                btn.style.backgroundColor = '';
+                btn.style.borderColor = '';
+            });
+            
             const humor = this.getAttribute('data-humor');
             const resposta = respostas[humor];
             respostaHumor.innerHTML = `<p>${resposta.mensagem}</p>`;
@@ -56,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sugestaoVideo.style.display = 'none';
         mostrarAnuncio();
     });
+ 
     
     function mostrarAnuncio() {
         const anuncioHTML = `
@@ -91,7 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
         depoimentoAtual = (n + depoimentos.length) % depoimentos.length;
         depoimentos[depoimentoAtual].classList.add('ativo');
     }
-    
+    function iniciarCarrossel() {
+        intervaloCarrossel = setInterval(proximoDepoimento, 1000);
+    }
     btnAnterior.addEventListener('click', () => {
         mostrarDepoimento(depoimentoAtual - 1);
     });
