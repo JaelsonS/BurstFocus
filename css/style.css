@@ -109,7 +109,7 @@ ul {
 }
 
 .cabecalho {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -396,12 +396,12 @@ ul {
     font-size: 1.2em;
 }
 
-/* Efeito hover para a imagem */
+
 .anuncio-produto:hover .imagem-anuncio {
     transform: scale(1.05);
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .imagem-anuncio-container {
         height: 250px;

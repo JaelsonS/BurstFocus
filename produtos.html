@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos | BurstFocus </title>
-    <link rel="stylesheet" href="css/produtos.css">
+    <title>Produtos | InnerFoco</title>
+    <meta name="description" content="Conheça nossos produtos desenvolvidos especialmente para potencializar o foco e produtividade de mentes criativas">
+    <meta name="keywords" content="produtos TDAH, curso foco, produtividade, métodos para TDAH">
+    <meta name="author" content="InnerFoco Team">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="icon" href="img/logo.jpeg" type="image/png">
 </head>
 <body>
     <header class="cabecalho">
         <div class="container">
-            <div class="logo">
-                <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus">
-            </div>
-            
+            <a href="index.html" class="logo">
+                <img src="img/logo.jpeg" alt="InnerFoco" width="120">
+            </a>
             <nav class="navegacao">
                 <ul class="menu">
                     <li><a href="index.html">Início</a></li>
@@ -24,73 +27,218 @@
                     <li><a href="produtos.html" class="ativo">Produtos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
-                
-                <div class="menu-mobile">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <button class="menu-mobile" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
             </nav>
         </div>
     </header>
 
     <section class="hero-produtos">
         <div class="container">
-            <h1>Produtos para Turbinar sua Produtividade</h1>
-            <p>Descubra ferramentas premium que vão transformar sua forma de trabalhar e estudar</p>
-            <div class="contador-oferta">
-                <p>Oferta termina em: <span id="contador">24:59:59</span></p>
+            <div class="conteudo-hero">
+                <h1><span>Nossos Produtos</span></h1>
+                <p>Soluções comprovadas para potencializar seu foco e produtividade</p>
             </div>
         </div>
     </section>
 
-    <section class="filtro-produtos">
+    <section class="verificacao-humor">
         <div class="container">
-            <div class="filtro-opcoes">
-                <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
-                <button class="botao-filtro" data-categoria="cursos">Cursos</button>
-                <button class="botao-filtro" data-categoria="templates">Templates</button>
-                <button class="botao-filtro" data-categoria="ebooks">E-books</button>
-                <button class="botao-filtro" data-categoria="software">Software</button>
+            <h2>Como está seu humor hoje?</h2>
+            <p class="subtitulo">Nos conte como você está se sentindo para receber conteúdo personalizado</p>
+            
+            <div class="opcoes-humor">
+                <button class="botao-humor" data-humor="feliz">
+                    <i class="far fa-smile"></i> Feliz
+                </button>
+                <button class="botao-humor" data-humor="normal">
+                    <i class="far fa-meh"></i> Normal
+                </button>
+                <button class="botao-humor" data-humor="triste">
+                    <i class="far fa-sad-tear"></i> Triste
+                </button>
+                <button class="botao-humor" data-humor="ansioso">
+                    <i class="fas fa-brain"></i> Ansioso
+                </button>
+                <button class="botao-humor" data-humor="desmotivado">
+                    <i class="far fa-tired"></i> Desmotivado
+                </button>
             </div>
-            <div class="campo-busca">
-                <input type="text" id="busca-produto" placeholder="Buscar produtos...">
-                <i class="fas fa-search"></i>
+            
+            <div class="resposta-humor" id="respostaHumor">
+                <p>Selecione como está se sentindo para receber uma mensagem motivacional personalizada!</p>
+            </div>
+            
+            <div class="sugestao-video" id="sugestaoVideo" style="display: none;">
+                <h3>Que tal assistir um vídeo para melhorar seu dia?</h3>
+                <div class="container-video" id="containerVideo"></div>
+                <button class="botao botao-secundario" id="pularVideo">Pular vídeo</button>
             </div>
         </div>
     </section>
-    <section class="lista-produtos">
+
+    <main class="conteudo-produtos">
         <div class="container">
             <div class="grade-produtos">
-            
-            </div>
-        </div>
-    </section>
-    <section class="banner-promocional">
-        <div class="container">
-            <div class="conteudo-banner">
-                <h2>COMBO PRODUTIVIDADE</h2>
-                <p>Adquira nosso pacote completo com 40% de desconto!</p>
-                <button class="botao-destaque" id="botao-combo">Quero o Combo!</button>
-            </div>
-            <div class="contador-combo">
-                <p>Promoção válida por: <span id="contador-combo">02:59:59</span></p>
-            </div>
-        </div>
-    </section>
+                <article class="produto destaque">
+                    <div class="imagem-produto">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&fit=crop" alt="Foco Explosivo" loading="lazy">
+                        <span class="categoria">Curso Online</span>
+                    </div>
+                    <div class="corpo-produto">
+                        <h2>Foco Explosivo em 30 Dias</h2>
+                        <div class="avaliacao">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(1.247 avaliações)</span>
+                        </div>
+                        <p class="descricao">Método completo para reprogramar seu cérebro e desenvolver foco sustentável, mesmo com TDAH.</p>
+                        <ul class="beneficios">
+                            <li><i class="fas fa-check"></i> 30 dias de treinamento prático</li>
+                            <li><i class="fas fa-check"></i> Técnicas baseadas em neurociência</li>
+                            <li><i class="fas fa-check"></i> Acompanhamento diário</li>
+                            <li><i class="fas fa-check"></i> Comunidade exclusiva</li>
+                        </ul>
+                        <div class="preco">
+                            <span class="preco-original">De R$ 497,00</span>
+                            <span class="preco-promocional">Por R$ 197,00</span>
+                            <span class="parcelamento">ou 12x de R$ 19,75</span>
+                        </div>
+                        <a href="https://pay.hotmart.com/C99080585L" class="botao botao-primario" target="_blank">Quero Meu Acesso</a>
+                    </div>
+                </article>
+                <article class="produto">
+                    <div class="imagem-produto">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&fit=crop" alt="Kit Produtividade" loading="lazy">
+                        <span class="categoria">Kit Completo</span>
+                    </div>
+                    <div class="corpo-produto">
+                        <h2>Kit Produtividade TDAH</h2>
+                        <div class="avaliacao">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(832 avaliações)</span>
+                        </div>
+                        <p class="descricao">Tudo que você precisa para organizar sua rotina e turbinar sua produtividade.</p>
+                        <ul class="beneficios">
+                            <li><i class="fas fa-check"></i> Planner físico + digital</li>
+                            <li><i class="fas fa-check"></i> Acesso ao curso básico</li>
+                            <li><i class="fas fa-check"></i> Coleção de ferramentas</li>
+                            <li><i class="fas fa-check"></i> Guia rápido de técnicas</li>
+                        </ul>
+                        <div class="preco">
+                            <span class="preco-original">De R$ 297,00</span>
+                            <span class="preco-promocional">Por R$ 147,00</span>
+                            <span class="parcelamento">ou 6x de R$ 24,50</span>
+                        </div>
+                        <a href="https://pay.hotmart.com/B99080620R" class="botao botao-primario" target="_blank">Comprar Agora</a>
+                    </div>
+                </article>
 
-    <section class="depoimentos">
-        <div class="container">
-            <h2>O que dizem nossos clientes</h2>
-            <div class="carrossel-depoimentos">
+                <!-- Produto 3 -->
+                <article class="produto">
+                    <div class="imagem-produto">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&fit=crop" alt="Masterclass" loading="lazy">
+                        <span class="categoria">Masterclass</span>
+                    </div>
+                    <div class="corpo-produto">
+                        <h2>Masterclass Foco Criativo</h2>
+                        <div class="avaliacao">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(1.045 avaliações)</span>
+                        </div>
+                        <p class="descricao">Aprenda a canalizar sua energia criativa e transformá-la em resultados extraordinários.</p>
+                        <ul class="beneficios">
+                            <li><i class="fas fa-check"></i> 8 horas de conteúdo exclusivo</li>
+                            <li><i class="fas fa-check"></i> Certificado de conclusão</li>
+                            <li><i class="fas fa-check"></i> Materiais complementares</li>
+                            <li><i class="fas fa-check"></i> Acesso vitalício</li>
+                        </ul>
+                        <div class="preco">
+                            <span class="preco-original">De R$ 397,00</span>
+                            <span class="preco-promocional">Por R$ 97,00</span>
+                            <span class="parcelamento">ou 5x de R$ 19,40</span>
+                        </div>
+                        <a href="https://pay.hotmart.com/R99080737D" class="botao botao-primario" target="_blank">Garantir Meu Acesso</a>
+                    </div>
+                </article>
             </div>
+
+            <section class="depoimentos-produtos">
+                <h2>O que estão dizendo sobre nossos produtos</h2>
+                <div class="carrossel-depoimentos">
+                    <div class="depoimento ativo">
+                        <div class="foto-depoente">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana Silva" loading="lazy">
+                        </div>
+                        <div class="texto-depoimento">
+                            <p>"O curso Foco Explosivo mudou completamente minha relação com o trabalho. Finalmente consigo terminar projetos!"</p>
+                            <div class="nome-depoente">Ana Silva, Designer</div>
+                            <div class="avaliacao">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mais depoimentos -->
+                </div>
+            </section>
+
+            <section class="garantia">
+                <div class="container-garantia">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="texto-garantia">
+                        <h3>Garantia Incondicional de 7 Dias</h3>
+                        <p>Se por qualquer motivo você não estiver satisfeito com nossos produtos, devolvemos 100% do seu dinheiro sem burocracia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h2>Perguntas Frequentes</h2>
+                <div class="pergunta">
+                    <button class="botao-pergunta">
+                        Como recebo acesso aos cursos?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="resposta">
+                        <p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com acesso à plataforma de cursos. Todos os materiais são digitais e disponibilizados online.</p>
+                    </div>
+                </div>
+                <div class="pergunta">
+                    <button class="botao-pergunta">
+                        Por quanto tempo tenho acesso?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="resposta">
+                        <p>Todos os nossos cursos e materiais têm acesso vitalício. Você pode assistir quando e quantas vezes quiser.</p>
+                    </div>
+                </div>
+                <!-- Mais perguntas -->
+            </section>
         </div>
-    </section>
+    </main>
+
     <footer class="rodape">
         <div class="container">
             <div class="conteudo-rodape">
                 <div class="coluna-rodape">
-                    <img src="https://img.freepik.com/fotos-gratis/composicao-plana-lay-de-elementos-de-conceito-de-otimismo_23-2148861667.jpg?uid=R188991667&ga=GA1.1.561515967.1740640690&semt=ais_hybrid&w=740" alt="BurstFocus" width="150">
                     <p>Foco Explosivo para Mentes Criativas</p>
-                    
+                    <img class="logo-rodape" src="img/logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
                     <div class="redes-sociais">
                         <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="rede-social"><i class="fab fa-youtube"></i></a>
@@ -104,8 +252,9 @@
                     <h4>Links</h4>
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
@@ -115,21 +264,20 @@
                     <ul>
                         <li><a href="#">Termos de Uso</a></li>
                         <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Garantia</a></li>
                     </ul>
                 </div>
                 
                 <div class="coluna-rodape">
                     <h4>Contato</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> burstfocus@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> (82)98188-6616</li>
+                        <li><i class="fas fa-envelope"></i> innerfoco@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> (82) 98188-6616</li>
                     </ul>
                 </div>
             </div>
             
             <div class="rodape-inferior">
-                <p>&copy; 2025 BurstFocus. Todos os direitos reservados.</p>
+                <p>&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

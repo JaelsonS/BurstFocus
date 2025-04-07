@@ -1,53 +1,57 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Carregar anúncios dinâmicos
-    const ads = [
-        "Aproveite nosso curso exclusivo de produtividade! 50% de desconto hoje!",
-        "Ebook grátis: '10 Hábitos das Pessoas Altamente Produtivas'!",
-        "Workshop online: Como triplicar seu foco em 30 dias!"
-    ];
-    
-    const products = [
-        {name: "Livro: O Poder do Hábito", price: "R$ 49,90"},
-        {name: "Curso Online: Foco Máximo", price: "R$ 297,00"},
-        {name: "Planner Premium BurstFocus", price: "R$ 89,90"},
-        {name: "Caneta Especial para Anotações", price: "R$ 29,90"}
-    ];
-    
-    // Anúncios dinâmicos
-    document.getElementById('dynamic-ad').textContent = ads[Math.floor(Math.random() * ads.length)];
-    document.getElementById('dynamic-ad-2').textContent = ads[Math.floor(Math.random() * ads.length)];
-    
-    // Carrossel de produtos
-    const carousel = document.getElementById('product-carousel');
-    products.forEach(product => {
-        const productDiv = document.createElement('div');
-        productDiv.className = 'product-item';
-        productDiv.innerHTML = `
-            <h4>${product.name}</h4>
-            <p class="text-accent">${product.price}</p>
-            <button class="btn btn-sm" onclick="showProductInterest('${product.name}')">Tenho interesse</button>
-        `;
-        carousel.appendChild(productDiv);
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+
+            // Fecha todos os outros itens do acordeão
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    const otherButton = otherItem.querySelector('.accordion-button');
+                    const otherContent = otherItem.querySelector('.accordion-content');
+                    if (otherButton && otherContent) {
+                        otherButton.classList.remove('active');
+                        otherContent.style.maxHeight = null;
+                    }
+                }
+            });
+
+            // Alterna o estado do item atual
+            button.classList.toggle('active');
+            if (button.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
     });
-    
-    // Formulário de contato
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.`);
-        this.reset();
-    });
+
+    // Abre o primeiro item do acordeão por padrão
+    if (accordionButtons.length > 0) {
+        accordionButtons[0].classList.add('active');
+        accordionButtons[0].nextElementSibling.style.maxHeight = accordionButtons[0].nextElementSibling.scrollHeight + 'px';
+    }
+
+    // Máscara para o campo de telefone
+    const telefoneInput = document.getElementById('telefone');
+    if (telefoneInput) {
+        telefoneInput.addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+            if (value.length > 0) {
+                value = '(' + value;
+            }
+            if (value.length > 3) {
+                value = value.substring(0, 3) + ') ' + value.substring(3);
+            }
+            if (value.length > 9) {
+                value = value.substring(0, 9) + '-' + value.substring(9, 13);
+            }
+
+            e.target.value = value;
+        });
+    }
 });
 
-function showStory(storyId) {
-    const story = document.getElementById(storyId);
-    story.style.display = story.style.display === 'block' ? 'none' : 'block';
-}
-
-function shareStory(person) {
-    alert(`História de ${person} compartilhada nas redes sociais! Obrigado por espalhar inspiração.`);
-}
-
-function showProductInterest(productName) {
-    alert(`Ótima escolha! Você demonstrou interesse em "${productName}". Um de nossos consultores entrará em contato com mais detalhes.`);
-}
