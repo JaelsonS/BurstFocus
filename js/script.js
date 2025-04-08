@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+    // Menu Mobile
     const menuMobile = document.querySelector('.menu-mobile');
     const menu = document.querySelector('.menu');
     
@@ -7,31 +7,38 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('ativo');
         menu.classList.toggle('mobile-ativo');
         
+        // Atualiza o atributo aria-expanded
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
         
+        // Bloqueia o scroll quando o menu está aberto
         if (menu.classList.contains('mobile-ativo')) {
             document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
         } else {
             document.body.style.overflow = '';
+            document.body.style.position = '';
         }
     });
     
-    
+    // Fecha o menu ao clicar em um link
     const menuLinks = document.querySelectorAll('.menu a');
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('mobile-ativo');
             menuMobile.classList.remove('ativo');
+            menuMobile.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = '';
+            document.body.style.position = '';
         });
     });
     
-    
+    // Verificação de Humor
     const botoesHumor = document.querySelectorAll('.botao-humor');
     const respostaHumor = document.getElementById('respostaHumor');
     const sugestaoVideo = document.getElementById('sugestaoVideo');
     const containerVideo = document.getElementById('containerVideo');
     const pularVideo = document.getElementById('pularVideo');
-    
     
     const respostas = {
         feliz: {
@@ -56,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-
     const anunciosPersonalizados = {
         feliz: {
             titulo: "Aproveite sua energia positiva!",
@@ -136,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    
     botoesHumor.forEach(botao => {
         botao.addEventListener('click', function() {
             botoesHumor.forEach(btn => btn.classList.remove('ativo'));
@@ -146,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const humor = this.getAttribute('data-humor');
             const resposta = respostas[humor];
             
-           
             respostaHumor.innerHTML = `<p>${resposta.mensagem}</p>`;
             
             setTimeout(() => {
@@ -157,11 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     allowfullscreen></iframe>
                 `;
                 
-                
                 sugestaoVideo.scrollIntoView({ behavior: 'smooth' });
 
-                
-                setTimeout(() => mostrarAnuncio(humor), 100000); 
+                setTimeout(() => mostrarAnuncio(humor), 1000); 
             }, 3000);
         });
     });
@@ -171,12 +173,11 @@ document.addEventListener('DOMContentLoaded', function() {
         sugestaoVideo.style.display = 'none';
         containerVideo.innerHTML = '';
         
-       
         const humorAtivo = document.querySelector('.botao-humor.ativo')?.getAttribute('data-humor') || 'normal';
         mostrarAnuncio(humorAtivo);
     });
     
-    
+    // Carrossel de Depoimentos
     const depoimentos = document.querySelectorAll('.depoimento');
     const btnAnterior = document.querySelector('.anterior');
     const btnProximo = document.querySelector('.proximo');
@@ -184,16 +185,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let intervaloCarrossel;
     
     function mostrarDepoimento(n) {
-        
         depoimentos.forEach(depoimento => depoimento.classList.remove('ativo'));
-        
-        
         depoimentoAtual = (n + depoimentos.length) % depoimentos.length;
-        
-        
         depoimentos[depoimentoAtual].classList.add('ativo');
-        
-        
         reiniciarIntervalo();
     }
     
@@ -206,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function() {
         intervaloCarrossel = setInterval(proximoDepoimento, 8000);
     }
     
-    
     btnAnterior.addEventListener('click', () => {
         mostrarDepoimento(depoimentoAtual - 1);
     });
@@ -215,10 +208,9 @@ document.addEventListener('DOMContentLoaded', function() {
         mostrarDepoimento(depoimentoAtual + 1);
     });
     
-    
     reiniciarIntervalo();
     
-   
+    // Efeito de scroll no cabeçalho
     window.addEventListener('scroll', function() {
         const cabecalho = document.querySelector('.cabecalho');
         if (window.scrollY > 50) {

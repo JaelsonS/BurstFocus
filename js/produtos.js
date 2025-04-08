@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // FAQ Accordion
     const botoesPergunta = document.querySelectorAll('.botao-pergunta');
     
     botoesPergunta.forEach(botao => {
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 resposta.classList.remove('aberta');
             }
             
-            // Fecha outras respostas
             botoesPergunta.forEach(outroBotao => {
                 if (outroBotao !== botao && outroBotao.classList.contains('ativo')) {
                     outroBotao.classList.remove('ativo');
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Carrossel de depoimentos
     const depoimentos = document.querySelectorAll('.depoimento');
     let depoimentoAtual = 0;
     
@@ -33,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         depoimentos[depoimentoAtual].classList.add('ativo');
     }
     
-    // Rotação automática dos depoimentos
     setInterval(() => {
         mostrarDepoimento(depoimentoAtual + 1);
     }, 5000);

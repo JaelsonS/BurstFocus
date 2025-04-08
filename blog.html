@@ -22,7 +22,7 @@
             </a>
             
             <nav class="navegacao">
-                <ul class="menu">
+                <ul class="menu" id="menu-principal">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="blog.html" class="ativo">Blog</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
@@ -30,7 +30,7 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
                 
-                <button class="menu-mobile" aria-label="Menu" aria-expanded="false">
+                <button class="menu-mobile" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">
                     <span class="hamburger"></span>
                 </button>
             </nav>
@@ -429,14 +429,14 @@
             <div class="conteudo-rodape">
                 <div class="coluna-rodape">
                     <p>Foco Explosivo para Mentes Criativas</p>
-                    <img class="logo-rodape" src="img/logo.jpeg" alt="BurstFocus">
+                    <img class="logo-rodape" src="img/logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
                     
                     <div class="redes-sociais">
-                        <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="rede-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="rede-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="rede-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
@@ -465,7 +465,7 @@
                     <h4>Contato</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> innerfoco@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> (82)98188-6616</li>
+                        <li><i class="fab fa-whatsapp"></i> (82) 98188-6616</li>
                     </ul>
                 </div>
             </div>
