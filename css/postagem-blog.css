@@ -1,5 +1,6 @@
 .imagem-artigo1 {
     position: relative;
+    width: 100%;
     height: 400px;
     max-height: 50vh;
     overflow: hidden;
@@ -11,7 +12,7 @@
     opacity: 0.7;
 }
 .imagem-artigo1 .categoria {
-    position: absolute;
+    position: relative;
     top: 20px;
     left: 20px;
     z-index: 2;
@@ -73,6 +74,7 @@
 
 .container {
     display: grid;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 300px;
     gap: 30px;
     max-width: 1200px;

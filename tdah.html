@@ -10,26 +10,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/postagem-blog.css">
+    <link rel="icon" href="img/InnerFoco-logo-Sem-Fundo.png" type="image/png">
 </head>
 <body>
     <header class="cabecalho">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="img/logo.jpeg" alt="InnerFoco" width="120" loading="lazy">
+                <img src="img/InnerFoco-logo.jpeg" alt="InnerFoco" width="120">
             </a>
             
             <nav class="navegacao">
-                <button class="menu-mobile">
-                    <span class="hamburger"></span>
-                </button>
-                
-                <ul class="menu">
+                <ul class="menu" id="menu-principal">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
+                
+                <button class="menu-mobile" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">
+                    <span class="hamburger"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -45,10 +46,6 @@
                     
                     <div class="corpo-artigo1">
                         <h1>TDAH: Guia Completo sobre o Transtorno de Déficit de Atenção e Hiperatividade</h1>
-                        
-                        <div class="meta-artigo">
-                            <span><i class="far fa-calendar-alt"></i> 15/10/2023</span>
-                        </div>
                         
                         <p class="resumo">O Transtorno de Déficit de Atenção e Hiperatividade (TDAH) é uma condição neurobiológica que afeta crianças e adultos. Neste guia completo, exploramos os sintomas, diagnóstico, tratamentos e estratégias para conviver melhor com o TDAH.</p>
                         
@@ -66,11 +63,7 @@
                             <div class="conteudo-anuncio">
                                 <h3>Domine Seu TDAH</h3>
                                 <p class="descricao-anuncio">O guia definitivo para entender e gerenciar o TDAH na vida adulta. Técnicas comprovadas para melhorar foco, produtividade e qualidade de vida.</p>
-                                <div class="preco-anuncio">
-                                    <span class="preco-original">R$ 89,90</span>
-                                    <span class="preco-promocional">R$ 59,90</span>
-                                </div>
-                                <a href="https://go.hotmart.com/C99080585L" target="_blank" class="botao botao-primario">Compre Agora</a>
+                                <a href="https://go.hotmart.com/B99285417T" target="_blank" class="botao botao-primario">Comprar Agora</a>
                             </div>
                         </div>
                         
@@ -120,13 +113,10 @@
                                 <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Curso online para TDAH" class="imagem-anuncio">
                             </div>
                             <div class="conteudo-anuncio">
-                                <h3>Curso: TDAH na Infância</h3>
+                                <h3>TDAH em adultos</h3>
                                 <p class="descricao-anuncio">Aprenda estratégias comprovadas para ajudar crianças com TDAH a se desenvolverem melhor na escola e em casa. Métodos baseados em neurociência.</p>
-                                <div class="preco-anuncio">
-                                    <span class="preco-original">R$ 297,00</span>
-                                    <span class="preco-promocional">R$ 197,00</span>
-                                </div>
-                                <a href="https://go.hotmart.com/B99080620R" target="_blank" class="botao botao-primario">Matricule-se Agora</a>
+                               
+                                <a href="https://go.hotmart.com/B99285417T" target="_blank" class="botao botao-primario">Comprar Agora</a>
                             </div>
                         </div>
                         
@@ -187,16 +177,13 @@
                         
                         <div class="anuncio-produto">
                             <div class="imagem-anuncio-container">
-                                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Planner para TDAH" class="imagem-anuncio">
+                                <img src="img/mulher-pensando.jpg" alt="Planner para TDAH" class="imagem-anuncio">
                             </div>
                             <div class="conteudo-anuncio">
                                 <h3>Planner Especial TDAH</h3>
                                 <p class="descricao-anuncio">Desenvolvido por especialistas para mentes criativas. Inclui técnicas de planejamento visual, rastreadores de hábitos e ferramentas para priorização.</p>
-                                <div class="preco-anuncio">
-                                    <span class="preco-original">R$ 79,90</span>
-                                    <span class="preco-promocional">R$ 59,90</span>
-                                </div>
-                                <a href="https://go.hotmart.com/R99080737D?dp=1" target="_blank" class="botao botao-primario">Compre Agora</a>
+                               
+                                <a href="https://go.hotmart.com/B99285417T" target="_blank" class="botao botao-primario">Compre Agora</a>
                             </div>
                         </div>
                         
@@ -246,10 +233,12 @@
                         <div class="rodape-artigo1">
                             <div class="compartilhamento">
                                 <span>Compartilhe:</span>
-                                <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" aria-label="Compartilhar no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/?locale=pt_BR" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/i/flow/login?lang=pt" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://br.linkedin.com/" aria-label="Compartilhar no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://web.whatsapp.com/" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://instagram.com/" aria-label="Compartilhar no Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://tiktok.com/" aria-label="Compartilhar no TikTok"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
                     </div>
@@ -260,41 +249,38 @@
                 <div class="widget">
                     <h3 class="widget-titulo">Categorias</h3>
                     <ul class="lista-categorias">
-                        <li><a href="#"><i class="fas fa-brain"></i> TDAH <span>(1)</span></a></li>
-                        <li><a href="#"><i class="fas fa-clock"></i> Produtividade <span>(1)</span></a></li>
-                        <li><a href="#"><i class="fas fa-heartbeat"></i> Saúde <span>(1)</span></a></li>
-                        <li><a href="#"><i class="fas fa-lightbulb"></i> Criatividade <span>(1)</span></a></li>
-                        <li><a href="#"><i class="fas fa-laptop"></i> Tecnologia <span>(1)</span></a></li>
-                        <li><a href="#"><i class="fas fa-book"></i> Resenhas <span>(1)</span></a></li>
+                        <li><a href="tdah.html"><i class="fas fa-brain"></i> TDAH <span>(1)</span></a></li>
+                        <li><a href="pomodoro.html"><i class="fas fa-clock"></i> Produtividade <span>(1)</span></a></li>
+                        <li><a href="alimentacao-foco.html"><i class="fas fa-heartbeat"></i> Saúde <span>(1)</span></a></li>
+                        <li><a href="tdah-criatividade.html"><i class="fas fa-lightbulb"></i> Criatividade <span>(1)</span></a></li>
+                        <li><a href="ferramentas-digitais.html"><i class="fas fa-laptop"></i> Tecnologia <span>(1)</span></a></li>
+                        <li><a href="https://www.tiktok.com/@innerfoco?_t=ZM-8vdSieBomLG&_r=1" target="_blank"><i class="fas fa-book"></i> Resenhas <span>(1)</span></a></li>
                     </ul>
                 </div>
                 
                 <div class="widget">
                     <h3 class="widget-titulo">Artigos Populares</h3>
                     <div class="artigo-popular">
-                        <a href="#">
+                        <a href="tdah-criatividade.html">
                             <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Criatividade">
                             <div class="conteudo-popular">
                                 <h4>O Superpoder Escondido do TDAH</h4>
-                                <span class="data">15/09/2023</span>
                             </div>
                         </a>
                     </div>
                     <div class="artigo-popular">
-                        <a href="#">
+                        <a href="pomodoro.html">
                             <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Pomodoro">
                             <div class="conteudo-popular">
                                 <h4>Pomodoro Adaptado para TDAH</h4>
-                                <span class="data">10/10/2023</span>
                             </div>
                         </a>
                     </div>
                     <div class="artigo-popular">
-                        <a href="#">
+                        <a href="matinal.html">
                             <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Rotina">
                             <div class="conteudo-popular">
                                 <h4>Rotina Matinal para TDAH</h4>
-                                <span class="data">28/09/2023</span>
                             </div>
                         </a>
                     </div>
@@ -314,30 +300,30 @@
                         <a href="https://go.hotmart.com/C99080585L" target="_blank">Educação especial</a>
                         <a href="https://go.hotmart.com/B99080620R" target="_blank">Expert da produtividade</a>
                         <a href="https://go.hotmart.com/R99080737D?dp=1" target="_blank">Vencendo a ansiedade</a>
-                        <a href="#">Neurociência</a>
-                        <a href="#">Rotina</a>
-                        <a href="#">Suplementos</a>
+                        <a href="https://go.hotmart.com/A99285559S" target="_blank">Neurociência</a>
+                        <a href="https://go.hotmart.com/A99285576V" target="_blank">Construindo seu Shape perfeito</a>
                     </div>
                 </div>
                 
                 <div class="widget">
                     <h3 class="widget-titulo">Livros Recomendados</h3>
                     <div class="tags">
-                        <a href="#">Mentes Inquietas</a>
-                        <a href="#">TDAH em Adultos</a>
-                        <a href="#">Foco</a>
-                        <a href="#">O Cérebro TDAH</a>
-                        <a href="#">Produtividade</a>
+                        <a href="https://amzn.to/3RSWLL8" target="_blank">Mentes Inquietas</a>
+                        <a href="https://amzn.to/42MOBdv" target="_blank">TDAH em Adultos</a>
+                        <a href="https://amzn.to/42GJzOA" target="_blank">TDAH como lidar</a>
+                        <a href="https://amzn.to/3Gs4f5b" target="_blank">Gestão do tempo</a>
+                        <a href="https://amzn.to/4lBU0vr" target="_blank">TDAH o seu cérebro é único</a>
                     </div>
                 </div>
                 
                 <div class="widget">
                     <h3 class="widget-titulo">Vídeos motivacionais</h3>
                     <div class="tags">
-                        <a href="https://www.youtube.com/watch?v=0fiktlzKfe0" target="_blank">Domine sua mente</a>
+                        <a href="https://www.youtube.com/watch?v=I0cftjZ15fY&pp=ygUJaW5uZXJmb2Nv" target="_blank">Alimentosnpara melhorar o foco</a>
                         <a href="https://youtu.be/DP8Jy4Y_Eak" target="_blank">Cresça em silêncio</a>
                         <a href="https://youtu.be/KHm7XwC9n-Y" target="_blank">Nunca desistir</a>
                         <a href="https://youtu.be/qlF35JWGFlg" target="_blank">Poder do altruísmo</a>
+                        <a href="https://www.youtube.com/watch?v=2u7Ik7_jfC4" target="_blank">Comece mesmo sem vontade</a>
                     </div>
                 </div>
             </aside>
@@ -347,22 +333,25 @@
     <footer class="rodape">
         <div class="container">
             <div class="conteudo-rodape">
-                <div class="coluna-rodape">
-                    <p>Foco Explosivo para Mentes Criativas</p>
-                    <img class="logo-rodape" src="img/logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
+                <div class="coluna-rodape branding-rodape">
+                    <img class="logo-rodape" src="img/InnerFoco-logo.jpeg" alt="InnerFoco" width="120" loading="lazy">
+                    <p class="slogan-rodape">Foco Explosivo para Mentes Criativas</p>
                     
                     <div class="redes-sociais">
-                        <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="rede-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="rede-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="rede-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/innerfoco/" target="_blank" class="rede-social" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@InnerFoco" target="_blank" class="rede-social" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@innerfoco?_t=ZM-8vdSieBomLG&_r=1" target="_blank" class="rede-social" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>  
                     </div>
                 </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Links</h4>
-                    <ul>
+                <div class="coluna-rodape navegacao-rodape">
+                    <h4 class="titulo-rodape">Links</h4>
+                    <ul class="lista-rodape">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
@@ -370,28 +359,31 @@
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                        <li><a href="#">Direitos Autorais</a></li>
-                    </ul>
-                </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> innerfoco@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> (82) 98188-6616</li>
-                    </ul>
+                <div class="coluna-rodape contato-rodape">
+                    <h4 class="titulo-rodape">Fale Conosco</h4>
+                    <form id="form-contato" action="https://formsubmit.co/innerfoco@gmail.com" method="POST" class="formulario-rodape">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo contato do site">
+                        
+                        <div class="grupo-formulario">
+                            <input type="text" name="name" placeholder="Seu nome" required class="campo-formulario">
+                        </div>
+                        <div class="grupo-formulario">
+                            <input type="email" name="email" placeholder="Seu e-mail" required class="campo-formulario">
+                        </div>
+                        <div class="grupo-formulario">
+                            <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required class="campo-formulario">
+                        </div>
+                        <div class="grupo-formulario">
+                            <textarea name="message" placeholder="Sua mensagem" required class="campo-formulario campo-mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="botao-formulario">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
             
             <div class="rodape-inferior">
-                <p>&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
+                <p class="copyright">&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

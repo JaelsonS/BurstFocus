@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/postagem-blog.css">
+    <link rel="icon" href="img/InnerFoco-logo-Sem-Fundo.png" type="image/png">
 </head>
 <body>
     <header class="cabecalho">
@@ -279,15 +280,13 @@
         <div class="container">
             <div class="conteudo-rodape">
                 <div class="coluna-rodape">
-                    <p>Foco Explosivo para Mentes Criativas</p>
-                    <img class="logo-rodape" src="img/logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
+                    <p class="paragrafo-rodape">Foco Explosivo para Mentes Criativas</p>
+                    <img class="logo-rodape" src="img/InnerFoco-logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
                     
                     <div class="redes-sociais">
-                        <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="rede-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="rede-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="rede-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/innerfoco/" target="_blank" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@InnerFoco" target="_blank" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@innerfoco?_t=ZM-8vdSieBomLG&_r=1" target="_blank" class="rede-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>  
                     </div>
                 </div>
                 
@@ -303,21 +302,25 @@
                 </div>
                 
                 <div class="coluna-rodape">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                        <li><a href="#">Direitos Autorais</a></li>
-                    </ul>
-                </div>
-                
-                <div class="coluna-rodape">
                     <h4>Contato</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> innerfoco@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> (82) 98188-6616</li>
-                    </ul>
+                    <form id="form-contato" action="https://formsubmit.co/innerfoco@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo contato do site">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
             

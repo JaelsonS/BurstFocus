@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/blog.css">
-    <link rel="icon" href="img/logo.jpeg" type="image/png">
+    <link rel="icon" href="img/InnerFoco-logo-Sem-Fundo.png" type="image/png">
 </head>
 <body>
     
@@ -38,7 +38,7 @@
         </div>
     </header>
 
-    <section class="hero-contato">
+    <section class="hero hero-contato">
         <div class="container">
             <div class="conteudo-hero">
                 <h1>Fale <span>Conosco</span></h1>
@@ -52,308 +52,277 @@
             <div class="oferta-especial">
                 <h3>OFERTA ESPECIAL!</h3>
                 <p>Entre em contato hoje e ganhe 20% de desconto no nosso curso "Produtividade para TDAH"</p>
-                <a href="#formulario" class="botao botao-primario">Quero meu desconto</a>
+                <a href="https://go.hotmart.com/D99286293H" target="_blank" class="botao botao-primario">Quero meu desconto</a>
             </div>
         </div>
     </section>
 
-    <main class="conteudo-contato">
-        <div class="container">
-            <div class="grade-contato">
-                <section class="formulario-contato" id="formulario">
-                    <h2>Envie sua mensagem</h2>
-                    <p class="subtitulo">Preencha o formulário abaixo e entraremos em contato em até 24h</p>
-                    
-                    <form action="https://formsubmit.co/innerfoco@gmail.com" method="POST" class="form-contato">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-                        
-                        <div class="grupo-form">
-                            <label for="nome">Nome completo*</label>
-                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
-                        </div>
-                        
-                        <div class="grupo-form">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                        </div>
-                        
-                        <div class="grupo-form">
-                            <label for="telefone">WhatsApp</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="(82) 99999-9999">
-                        </div>
-                        
-                        <div class="grupo-form">
-                            <label for="assunto">Assunto*</label>
-                            <select id="assunto" name="assunto" required>
-                                <option value="" disabled selected>Selecione um assunto</option>
-                                <option value="Dúvida">Dúvida sobre produtos</option>
-                                <option value="Sugestão">Sugestão para o blog</option>
-                                <option value="Parceria">Proposta de parceria</option>
-                                <option value="Outro">Outro assunto</option>
-                            </select>
-                        </div>
-                        
-                        <div class="grupo-form">
-                            <label for="mensagem">Mensagem*</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
-                        </div>
-                        
-                        <div class="grupo-form termos">
-                            <input type="checkbox" id="termos" name="termos" required>
-                            <label for="termos">Concordo em receber e-mails e mensagens da InnerFoco sobre produtos e conteúdos</label>
-                        </div>
-                        
-                        <button type="submit" class="botao botao-primario">Enviar mensagem</button>
-                    </form>
-                </section>
+    <div class="container layout-contato">
+        <main class="conteudo-principal">
+            <section class="formulario-contato" id="formulario">
+                <h2>Envie sua mensagem</h2>
+                <p class="subtitulo">Preencha o formulário abaixo e entraremos em contato em até 24h</p>
+                <form action="https://formsubmit.co/innerfoco@gmail.com" method="POST" class="form-contato">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <div class="grupo-form">
+                        <label for="nome">Nome completo*</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="telefone">WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(82) 99999-9999">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="assunto">Assunto*</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="Dúvida">Dúvida sobre produtos</option>
+                            <option value="Sugestão">Sugestão para o blog</option>
+                            <option value="Parceria">Proposta de parceria</option>
+                            <option value="Outro">Outro assunto</option>
+                        </select>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                    <div class="grupo-form termos">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo em receber e-mails e mensagens da InnerFoco sobre produtos e conteúdos</label>
+                    </div>
+                    <button type="submit" class="botao botao-primario">Enviar mensagem</button>
+                </form>
+            </section>
 
-                <aside class="info-contato">
-                    <div class="card-contato">
-                        <div class="icone-contato">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>E-mail</h3>
-                        <p>innerfoco@gmail.com</p>
-                        <a href="mailto:innerfoco@gmail.com" class="botao botao-secundario">Enviar e-mail</a>
-                        <h3>Pronto para transformar sua produtividade?</h3>
-                        <p>Junte-se a mais de 10.000 pessoas que já descobriram como potencializar seu foco com nossas técnicas.</p>
-                    </div>
-                    
-                    <div class="card-contato">
-                        <div class="icone-contato">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <p>(82) 98188-6616</p>
-                        <a href="https://wa.me/5582981886616" target="_blank" class="botao botao-secundario">Enviar mensagem</a>
-                    </div>
-                    
-                    <div class="card-contato">
-                        <div class="icone-contato">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Canal no WhatsApp</h3>
-                        <p>Receba conteúdos exclusivos</p>
-                        <a href="https://whatsapp.com/channel/0029VaZD6C242DcdbMPlmC1K" target="_blank" class="botao botao-primario">Acessar canal</a>
-                    </div>
-                    
-                    <div class="redes-sociais">
-                        <h3>Nossas redes sociais</h3>
-                        <div class="icones-redes">
-                            <a href="#" class="rede-social" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="rede-social" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="rede-social" target="_blank"><i class="fab fa-tiktok"></i></a>
-                            <a href="#" class="rede-social" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="rede-social" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            
-            <aside class="sidebar">
-                <div class="widget">
-                    <h3 class="widget-titulo">Produtos em Destaque</h3>
-                    
-                    <div class="produto-destaque">
-                        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Curso Produtividade">
-                        <div class="info-produto">
-                            <h4>Curso Expert em Produtividade</h4>
-                            <p class="preco">R$ 297,00 <span class="preco-original">R$ 497,00</span></p>
-                            <a href="https://go.hotmart.com/B99080620R" target="_blank" class="botao botao-primario">Comprar agora</a>
+            <section class="perguntas-frequentes">
+                <h2>Perguntas Frequentes</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-button">Como posso comprar os produtos da InnerFoco? <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Você pode comprar diretamente pelo nosso site na página de <a class="produto-destaque" href="produtos.html">Produtos</a>, ou se preferir, entre em contato que te ajudaremos com todo o processo.</p>
                         </div>
                     </div>
                     
-                    <div class="produto-destaque">
-                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ebook TDAH">
-                        <div class="info-produto">
-                            <h4>Ebook Dominando o TDAH</h4>
-                            <p class="preco">R$ 47,00 <span class="preco-original">R$ 97,00</span></p>
-                            <a href="#" class="botao botao-primario">Comprar agora</a>
+                    <div class="accordion-item">
+                        <button class="accordion-button">Os cursos têm certificado? <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Sim, todos os nossos cursos emitem certificado digital de conclusão com carga horária, que pode ser utilizado para horas complementares e enriquecimento curricular.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">Posso sugerir temas para o blog? <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Claro! Adoramos sugestões. Você pode enviar pelo formulário de contato ou diretamente pelo nosso e-mail innerfoco@gmail.com com o assunto "Sugestão de tema".</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">Como funciona o suporte após a compra? <i class="fas fa-chevron-down"></i></button>
+                        <div class="accordion-content">
+                            <p>Todos os nossos produtos contam com suporte por e-mail e WhatsApp. Para cursos, temos um grupo exclusivo no WhatsApp para tirar dúvidas e trocar experiências.</p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="widget">
-                    <h3 class="widget-titulo">Artigos Recentes</h3>
-                    <div class="artigo-popular">
-                        <a href="tdah.html">
-                            <img src="img/rapaz-tdah.avif" alt="TDAH em adultos">
-                            <div class="conteudo-popular">
-                                <h4>TDAH em Adultos: Sinais e Estratégias</h4>
-                                <span class="data">15/10/2024</span>
+            <section class="verificacao-humor">
+                <h2>Como está seu humor hoje?</h2>
+                <p class="subtitulo">Nos conte como você está se sentindo para receber conteúdo personalizado</p>
+                
+                <div class="opcoes-humor">
+                    <button class="botao-humor" data-humor="feliz">
+                        <i class="far fa-smile"></i> Feliz
+                    </button>
+                    <button class="botao-humor" data-humor="normal">
+                        <i class="far fa-meh"></i> Normal
+                    </button>
+                    <button class="botao-humor" data-humor="triste">
+                        <i class="far fa-sad-tear"></i> Triste
+                    </button>
+                    <button class="botao-humor" data-humor="ansioso">
+                        <i class="fas fa-brain"></i> Ansioso
+                    </button>
+                    <button class="botao-humor" data-humor="desmotivado">
+                        <i class="far fa-tired"></i> Desmotivado
+                    </button>
+                </div>
+                
+                <div class="resposta-humor" id="respostaHumor">
+                    <p>Selecione como está se sentindo para receber uma mensagem motivacional personalizada!</p>
+                </div>
+                
+                <div class="sugestao-video" id="sugestaoVideo" style="display: none;">
+                    <h3>Que tal assistir um vídeo para melhorar seu dia?</h3>
+                    <div class="container-video" id="containerVideo"></div>
+                    <button class="botao botao-secundario" id="pularVideo">Pular vídeo</button>
+                </div>
+            </section>
+
+            <section class="depoimentos">
+                <div class="container">
+                    <h2>Como <span>vencer a procrastinação</span></h2>
+                    <p class="subtitulo">Guia prático para quem começa e não termina, distrai fácil ou vive adiando tarefas</p>
+                    
+                    <div class="carrossel-depoimentos">
+                        <article class="depoimento ativo">
+                            <div class="foto-depoente">
+                                <img src="img/mulher-pensando.jpg" alt="Procrastinação" loading="lazy">
                             </div>
-                        </a>
-                    </div>
-                    <div class="artigo-popular">
-                        <a href="artigo-pomodoro-tdah.html">
-                            <img src="img/moça.avif" alt="Técnica Pomodoro">
-                            <div class="conteudo-popular">
-                                <h4>Pomodoro Adaptado para TDAH</h4>
-                                <span class="data">10/10/2023</span>
+                            <div class="texto-depoimento">
+                                <h3>Por que você procrastina?</h3>
+                                <p>Seu cérebro não é preguiçoso! DESVENDANDO A PROCRASTINAÇÃO
+                                </p>
+                                <ul>
+                                    <li>Tarefas parecem grandes demais</li>
+                                    <li>Falta clareza no primeiro passo</li>
+                                    <li>O medo de falhar paralisa</li>
+                                </ul>
+                                <p><strong>Solução:</strong> Nosso <a href="https://go.hotmart.com/P99286258J?dp=1" class="cta-inline">Desvendando a Procrastinação: Conquiste a Produtividade e
+                                    Transforme sua Vida.</a> Ele ensina a quebrar esse ciclo.</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="artigo-popular">
-                        <a href="artigo-rotina-matinal.html">
-                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Rotina matinal">
-                            <div class="conteudo-popular">
-                                <h4>Rotina Matinal para TDAH</h4>
-                                <span class="data">28/09/2023</span>
+                        </article>
+                        
+                        <article class="depoimento">
+                            <div class="foto-depoente">
+                                <img src="img/foco.jpg" alt="Método" loading="lazy">
                             </div>
-                        </a>
+                            <div class="texto-depoimento">
+                                <h3>Desafio de Produtividade: Transforme Sua Vida em 30 Dias</h3>
+                                <p>Aumente sua eficiência e produtividade de forma significativa. Receba orientações diárias e ferramentas práticas para otimizar seu tempo e alcançar seus objetivos em apenas 30 dias.</p>
+                                <ol>
+                                    <li>Com o <strong>Desafio de 30 dias para a Produtividade Máxima, </strong>transforme sua vida, aumentando sua eficiência e produtividade de forma significativa. </li>
+                                    <li>Execute só esse passo</li>
+                                </ol>
+                                <p><a href="https://go.hotmart.com/D99286293H" target="_blank" class="cta-inline">ESTA OFERTA PODE TERMINAR EM BREVE.</a></p>
+                            </div>
+                        </article>
+                        
+                        <article class="depoimento">
+                            <div class="foto-depoente">
+                                <img src="img/rapaz-olhos-fechado.jpg" alt="Ex-aluna Luana" loading="lazy">
+                            </div>
+                            <div class="texto-depoimento">
+                                <h3>História real</h3>
+                                <p>"Eu começava 10 projetos e terminava zero. Com o método <strong>InnerFoco</strong>, finalizei meu livro em 3 meses."</p>
+                                <div class="nome-depoente">Luana, escritora</div>
+                                <p><a href="https://go.hotmart.com/D99286293H" target="_blank" class="cta-inline">Veja como ela fez</a></p>
+                            </div>
+                        </article>
+                        
+                        <article class="depoimento">
+                            <div class="foto-depoente">
+                                <img src="img/rapaz-tdah.avif" alt="Comunidade" loading="lazy">
+                            </div>
+                            <div class="texto-depoimento">
+                                <h3>Você não está sozinho(a)</h3>
+                                <p>Junte-se a 5.300 pessoas que estão transformando sua produtividade:</p>
+                                <ul>
+                                    <li><strong>Desafio 7 dias</strong> sem procrastinação</li>
+                                    <li>Aulas ao vivo sobre <strong>foco sem força de vontade</strong></li>
+                                </ul>
+                                <p><a href="https://go.hotmart.com/D99286293H" target="_blank" class="cta-inline">Quero participar</a></p>
+                            </div>
+                        </article>
+                        
+                        <button class="controle-carrossel anterior" aria-label="Depoimento anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="controle-carrossel proximo" aria-label="Próximo depoimento"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="widget">
-                    <h3 class="widget-titulo">Vídeos Motivacionais</h3>
-                    <div class="video-widget">
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/0fiktlzKfe0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h4>Domine sua mente em 10 minutos</h4>
-                    </div>
-                    <div class="video-widget">
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/DP8Jy4Y_Eak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h4>Cresça em silêncio</h4>
-                    </div>
-                </div>
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-titulo">Categorias</h3>
+                <ul class="lista-categorias">
+                    <li><a href="tdah.html"><i class="fas fa-brain"></i> TDAH <span>(1)</span></a></li>
+                    <li><a href="pomodoro.html"><i class="fas fa-clock"></i> Produtividade <span>(1)</span></a></li>
+                    <li><a href="alimentacao-foco.html"><i class="fas fa-heartbeat"></i> Saúde <span>(1)</span></a></li>
+                    <li><a href="tdah-criatividade.html"><i class="fas fa-lightbulb"></i> Criatividade <span>(1)</span></a></li>
+                    <li><a href="ferramentas-digitais.html"><i class="fas fa-laptop"></i> Tecnologia <span>(1)</span></a></li>
+                    <li><a href="matinal.html"><i class="fas fa-book"></i> Resenhas <span>(1)</span></a></li>
+                </ul>
+            </div>
 
-                <div class="widget">
-                    <h3 class="widget-titulo">Newsletter</h3>
-                    <p class="widget-texto">Receba artigos exclusivos e dicas de produtividade no seu e-mail.</p>
-                    <form class="form-newsletter">
-                        <input type="email" placeholder="Seu melhor e-mail" required>
-                        <button type="submit" class="botao botao-primario">Assinar</button>
-                    </form>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <section class="perguntas-frequentes">
-        <div class="container">
-            <h2>Perguntas Frequentes</h2>
-            
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-button">Como posso comprar os produtos da InnerFoco? <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-content">
-                        <p>Você pode comprar diretamente pelo nosso site na página de <a class="produto-destaque" href="produtos.html">Produtos</a>, ou se preferir, entre em contato que te ajudaremos com todo o processo.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-button">Os cursos têm certificado? <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-content">
-                        <p>Sim, todos os nossos cursos emitem certificado digital de conclusão com carga horária, que pode ser utilizado para horas complementares e enriquecimento curricular.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-button">Posso sugerir temas para o blog? <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-content">
-                        <p>Claro! Adoramos sugestões. Você pode enviar pelo formulário de contato ou diretamente pelo nosso e-mail innerfoco@gmail.com com o assunto "Sugestão de tema".</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-button">Como funciona o suporte após a compra? <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-content">
-                        <p>Todos os nossos produtos contam com suporte por e-mail e WhatsApp. Para cursos, temos um grupo exclusivo no WhatsApp para tirar dúvidas e trocar experiências.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="verificacao-humor">
-        <div class="container">
-            <h2>Como está seu humor hoje?</h2>
-            <p class="subtitulo">Nos conte como você está se sentindo para receber conteúdo personalizado</p>
-            
-            <div class="opcoes-humor">
-                <button class="botao-humor" data-humor="feliz">
-                    <i class="far fa-smile"></i> Feliz
-                </button>
-                <button class="botao-humor" data-humor="normal">
-                    <i class="far fa-meh"></i> Normal
-                </button>
-                <button class="botao-humor" data-humor="triste">
-                    <i class="far fa-sad-tear"></i> Triste
-                </button>
-                <button class="botao-humor" data-humor="ansioso">
-                    <i class="fas fa-brain"></i> Ansioso
-                </button>
-                <button class="botao-humor" data-humor="desmotivado">
-                    <i class="far fa-tired"></i> Desmotivado
-                </button>
-            </div>
-            
-            <div class="resposta-humor" id="respostaHumor">
-                <p>Selecione como está se sentindo para receber uma mensagem motivacional personalizada!</p>
-            </div>
-            
-            <div class="sugestao-video" id="sugestaoVideo" style="display: none;">
-                <h3>Que tal assistir um vídeo para melhorar seu dia?</h3>
-                <div class="container-video" id="containerVideo"></div>
-                <button class="botao botao-secundario" id="pularVideo">Pular vídeo</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="depoimentos">
-        <div class="container">
-            <h2>O que dizem sobre nós</h2>
-            
-            <div class="carrossel-depoimentos">
-                <div class="depoimento">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Silva">
-                    </div>
-                    <div class="conteudo-depoimento">
-                        <p>"Comprei o curso de produtividade e mudou completamente minha rotina. Finalmente consigo organizar meu tempo com TDAH!"</p>
-                        <div class="autor">
-                            <strong>Maria Silva</strong>
-                            <span>Estudante</span>
+            <div class="widget">
+                <h3 class="widget-titulo">Artigos Populares</h3>
+                <div class="artigo-popular">
+                    <a href="tdah-criatividade.html">
+                        <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Criatividade">
+                        <div class="conteudo-popular">
+                            <h4>O Superpoder Escondido do TDAH</h4>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                
-                <div class="depoimento">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos Oliveira">
-                    </div>
-                    <div class="conteudo-depoimento">
-                        <p>"O atendimento pelo WhatsApp foi excelente! Me explicaram tudo sobre os produtos e me indicaram o melhor para minhas necessidades."</p>
-                        <div class="autor">
-                            <strong>Carlos Oliveira</strong>
-                            <span>Designer</span>
+                <div class="artigo-popular">
+                    <a href="pomodoro.html">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Pomodoro">
+                        <div class="conteudo-popular">
+                            <h4>Pomodoro Adaptado para TDAH</h4>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                
-                <div class="depoimento">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Santos">
-                    </div>
-                    <div class="conteudo-depoimento">
-                        <p>"Adoro os conteúdos do blog e do canal no WhatsApp. Sempre trazem dicas práticas que realmente funcionam no dia a dia."</p>
-                        <div class="autor">
-                            <strong>Ana Santos</strong>
-                            <span>Professora</span>
+                <div class="artigo-popular">
+                    <a href="matinal.html">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Rotina">
+                        <div class="conteudo-popular">
+                            <h4>Rotina Matinal para TDAH</h4>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="cta-final">
+            <div class="widget">
+                <h3 class="widget-titulo">Acessar canal</h3>
+                <p class="widget-texto">Receba artigos exclusivos e dicas de produtividade diretamente no seu Whatsapp.</p>
+                <a href="https://whatsapp.com/channel/0029VaZD6C242DcdbMPlmC1K" class="botao botao-primario">Acessar canal</a>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-titulo">Cursos</h3>
+                <div class="tags">
+                    <a href="https://go.hotmart.com/C99080585L" target="_blank">Educação especial</a>
+                    <a href="https://go.hotmart.com/B99080620R" target="_blank">Expert da produtividade</a>
+                    <a href="https://go.hotmart.com/R99080737D?dp=1" target="_blank">Vencendo a ansiedade</a>
+                    <a href="https://go.hotmart.com/A99285559S" target="_blank">Neurociência</a>
+                    <a href="https://go.hotmart.com/A99285576V" target="_blank">Construindo seu Shape perfeito</a>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-titulo">Livros Recomendados</h3>
+                <div class="tags">
+                    <a href="https://amzn.to/3RSWLL8" target="_blank">Mentes Inquietas</a>
+                    <a href="https://amzn.to/42MOBdv" target="_blank">TDAH em Adultos</a>
+                    <a href="https://amzn.to/42GJzOA" target="_blank">TDAH como lidar</a>
+                    <a href="https://amzn.to/3Gs4f5b" target="_blank">Gestão do tempo</a>
+                    <a href="https://amzn.to/4lBU0vr" target="_blank">TDAH o seu cérebro é único</a>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-titulo">Vídeos motivacionais</h3>
+                <div class="tags">
+                    <a href="https://www.youtube.com/watch?v=0fiktlzKfe0&pp=ygUUdmlkZW9zIG1vdGl2YWNpb25haXM%3D" target="_blank">Domine sua mente</a>
+                    <a href="https://youtu.be/DP8Jy4Y_Eak?list=PLeeZDkov688PXUK51QMwvTbtItRx2RdWj" target="_blank">Cresça em silêncio</a>
+                    <a href="https://youtu.be/KHm7XwC9n-Y?list=PLeeZDkov688PXUK51QMwvTbtItRx2RdWj" target="_blank">O segredo para nunca desistir</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <section class="cta">
         <div class="container">
-            <div class="box-cta">
+            <div class="conteudo-cta">
                 <h2>Pronto para transformar sua produtividade?</h2>
-                <p>Entre em contato agora e descubra como nossos produtos podem ajudar você!</p>
-                <div class="botoes-cta">
-                    <a href="https://wa.me/5582981886616" class="botao botao-primario"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
-                </div>
+                <p>Comece hoje mesmo e domine seu foco em 30 dias ou menos</p>
+                <a href="https://go.hotmart.com/D99286293H" target="_blank" class="botao botao-primario-cta botao-grande">Quero Meu Foco Explosivo</a>
             </div>
         </div>
     </section>
@@ -361,22 +330,25 @@
     <footer class="rodape">
         <div class="container">
             <div class="conteudo-rodape">
-                <div class="coluna-rodape">
-                    <p>Foco Explosivo para Mentes Criativas</p>
-                    <img class="logo-rodape" src="img/logo.jpeg" alt="InnerFoco" width="100" loading="lazy">
+                <div class="coluna-rodape branding-rodape">
+                    <img class="logo-rodape" src="img/InnerFoco-logo.jpeg" alt="InnerFoco" width="120" loading="lazy">
+                    <p class="slogan-rodape">Foco Explosivo para Mentes Criativas</p>
                     
                     <div class="redes-sociais">
-                        <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="rede-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="rede-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="rede-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/innerfoco/" target="_blank" class="rede-social" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@InnerFoco" target="_blank" class="rede-social" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@innerfoco?_t=ZM-8vdSieBomLG&_r=1" target="_blank" class="rede-social" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>  
                     </div>
                 </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Links</h4>
-                    <ul>
+                <div class="coluna-rodape navegacao-rodape">
+                    <h4 class="titulo-rodape">Links</h4>
+                    <ul class="lista-rodape">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
@@ -384,34 +356,34 @@
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                        <li><a href="#">Direitos Autorais</a></li>
-                    </ul>
-                </div>
-                
-                <div class="coluna-rodape">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> innerfoco@gmail.com</li>
-                        <li><i class="fab fa-whatsapp"></i> (82) 98188-6616</li>
-                    </ul>
+                <div class="coluna-rodape contato-rodape">
+                    <h4 class="titulo-rodape">Fale Conosco</h4>
+                    <form id="form-contato" action="https://formsubmit.co/innerfoco@gmail.com" method="POST" class="formulario-rodape">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo contato do site">
+                        
+                        <div class="grupo-formulario">
+                            <input type="text" name="name" placeholder="Seu nome" required class="campo-formulario">
+                        </div>
+                        <div class="grupo-formulario">
+                            <input type="email" name="email" placeholder="Seu e-mail" required class="campo-formulario">
+                        </div>
+                        <div class="grupo-formulario">
+                            <textarea name="message" placeholder="Sua mensagem" required class="campo-formulario campo-mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="botao-formulario">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
             
             <div class="rodape-inferior">
-                <p>&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
+                <p class="copyright">&copy; 2025 InnerFoco. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
     <script src="js/contato.js"></script>
-
+    <script src="js/blog.js"></script>
 </body>
 </html>
